@@ -1,14 +1,14 @@
 const express = require('express')
+const config = require("config");
+
 const app = express()
 const { PORT = 3000 } = process.env;
-const config = require("config");
 
 console.log("PORT : ", PORT);
 
 app.get('/', (req, res) => {
-  var testVariable = config.get("testVariable");
-  console.log(testVariable);
-  res.send('Hello World! '+testVariable);
+  var environment_name = config.get("environment_name");
+  res.json({"message":"Hello World, "+environment_name});
 })
 
 app.listen(PORT, () =>
