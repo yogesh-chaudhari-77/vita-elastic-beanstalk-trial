@@ -1,0 +1,10 @@
+{
+    "testVariable": "from dev",
+    "sql":{
+        "host": "localhost",
+        "databaseName": "vita-dev",
+        "port": "3306",
+        "username": "root",
+        "password": ""
+    }
+}

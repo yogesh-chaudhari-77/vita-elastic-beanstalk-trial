@@ -1,0 +1,10 @@
+{
+    "testVariable": "from prod",
+    "sql":{
+        "host": "",
+        "databaseName": "",
+        "port": "",
+        "username": "",
+        "password": ""
+    }
+}
